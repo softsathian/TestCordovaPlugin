@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android" id="cordova.plugin.AccuroFitTest" version="1.0.0">
+  
+   <name>AccuroFitTest</name>
+
+   <js-module name="AccuroFitTest" src="www/AccuroFitTest.js">
+      <clobbers target="AccuroFitTest" />
+   </js-module>
+
+   <platform name="android">
+      <config-file parent="/*" target="res/xml/config.xml">
+         <feature name="AccuroFitTest">
+            <param name="android-package" value="cordova.plugin.AccuroFitTest.AccuroFitTest" />
+         </feature>
+      </config-file>
+      <config-file parent="/*" target="AndroidManifest.xml" />
+      <source-file src="src/android/AccuroFitTest.java" target-dir="src/cordova/plugin/AccuroFitTest/AccuroFitTest" />
+   </platform>
+
+   <platform name="ios">
+      <config-file parent="/*" target="config.xml">
+         <feature name="AccuroFitTest">
+            <param name="ios-package" value="AccuroFitTest" />
+         </feature>
+      </config-file>
+      <source-file src="src/ios/AccuroFitTest.m" />
+   </platform>
+
+</plugin>
