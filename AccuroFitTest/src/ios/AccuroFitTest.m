@@ -6,7 +6,6 @@
   // Member variables go here.
 }
 
-
 - (void)add:(CDVInvokedUrlCommand*)command;
 - (void)subtract:(CDVInvokedUrlCommand*)command;
 @end
